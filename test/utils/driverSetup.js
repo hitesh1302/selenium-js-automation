@@ -7,7 +7,7 @@ async function getDriver() {
 
     if (!driver)
     {
-        driver = await new Builder().forBrowser().build();
+        driver = await new Builder().forBrowser('chrome').build();
     }
     return driver;
 }
@@ -15,7 +15,7 @@ async function getDriver() {
 async function quitDriver() {
     if(driver)
     {
-        await driver().quit();
+        await driver.quit();
         driver = null;
     } 
 }
