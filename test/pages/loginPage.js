@@ -10,6 +10,11 @@ class LoginPage {
     await this.driver.get(process.env.BASE_URL);
   }
 
+  async changeToEmail(){
+    const emailTab = await this.driver.findElement(By.css('button[type="button"]'));
+    await emailTab.click();
+  }
+
   async enterUsername(username) {
     const usernameInput = await this.driver.findElement(By.id('email'));
     await usernameInput.clear();
@@ -33,10 +38,13 @@ class LoginPage {
   }*/
 
   async isLoggedIn() {
-    const currentUrl = await this.driver.getCurrentUrl();
-    return currentUrl !== process.env.BASE_URL;
-    
+  try {
+    await this.driver.findElement(By.css('.dashboard'));
+    return true;
+  } catch (err) {
+    return false;
   }
+}
 }
 
 module.exports = LoginPage;
