@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { By } = require('selenium-webdriver');
+const { By, until } = require('selenium-webdriver');
 
 class LoginPage {
   constructor(driver) {
@@ -8,6 +8,21 @@ class LoginPage {
 
   async open() {
     await this.driver.get(process.env.BASE_URL);
+  }
+
+  async selectCountryCode(){
+    const countryCodeDropDown = await this.driver.findElement(By.className('iti__selected-flag'));
+    await countryCodeDropDown.click();
+
+    await this.driver.wait(until.elementLocated(By.id('country-listbox')), 5000);
+
+    const selectCountryCode = await this.driver.findElement(By.css('.iti__country[data-dial-code="91"]'));
+    await selectCountryCode.click();
+  }
+  async enterMobileNumber(mobileNumber){
+    const mobileNumberInput = await this.driver.findElement(By.id('phone-code'));
+    await mobileNumberInput.clear();
+    await mobileNumberInput.sendKeys(mobileNumber);
   }
 
   async changeToEmail(){
@@ -32,10 +47,18 @@ class LoginPage {
     await loginBtn.click();
   }
 
-  /*async getErrorMessage() {
-    const errorElement = await this.driver.findElement(By.css('.error-message'));
-    return await errorElement.getText();
-  }*/
+  async getErrorMessage() {
+    const locateElement = By.css('span[data-notify="message"]');
+
+  // Wait until the element contains non-empty text
+  await this.driver.wait(until.elementTextMatches(
+    this.driver.findElement(locateElement),
+    /.+/   // regex: one or more characters
+  ), 5000, "Error message did not appear");
+
+  const errorElement = await this.driver.findElement(locateElement);
+  return (await errorElement.getText()).trim();
+  }
 
   async isLoggedIn() {
   try {
