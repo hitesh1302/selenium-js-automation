@@ -7,7 +7,7 @@ class LoginPage {
   }
 
   async open() {
-    await this.driver.get(process.env.BASE_URL);
+    await this.driver.get(process.env.BASE_URL + 'users/login');
   }
 
   async selectCountryCode(){
@@ -16,8 +16,8 @@ class LoginPage {
 
     await this.driver.wait(until.elementLocated(By.id('country-listbox')), 5000);
 
-    const selectCountryCode = await this.driver.findElement(By.css('.iti__country[data-dial-code="91"]'));
-    await selectCountryCode.click();
+    const countryCode = await this.driver.findElement(By.css('.iti__country[data-dial-code="91"]'));
+    await countryCode.click();
   }
   async enterMobileNumber(mobileNumber){
     const mobileNumberInput = await this.driver.findElement(By.id('phone-code'));
