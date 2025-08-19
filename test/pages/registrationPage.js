@@ -27,10 +27,10 @@ class RegistrationPage {
         await mobileNumberInput.clear();
         await mobileNumberInput.sendKeys(mobileNumber);
     }
-    async enterEmail(email){
+    async enterEmail(eMail){
         const emailInput = await this.driver.findElement(By.css('Input[name="email"]'));
         await emailInput.clear();
-        await emailInput.sendKeys(email);
+        await emailInput.sendKeys(eMail);
     }
     async enterPassword(password){
         const passwordInput = await this.driver.findElement(By.css('input[name="password"]'));
@@ -65,7 +65,7 @@ class RegistrationPage {
     }
     async getValidationMessage(){
         const locateElement = By.css('span[data-notify="message"]');
-        this.driver.wait(until.elementTextMatches(this.driver.findElement(locateElement)), 5000, "Validation message did not appear");
+        this.driver.wait(until.elementTextMatches(this.driver.findElement(locateElement)), 7000, "Validation message did not appear");
 
         const validationMessageElement = await this.driver.findElement(locateElement);
         return (await validationMessageElement.getText()).trim();
