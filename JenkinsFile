@@ -1,0 +1,63 @@
+pipeline {
+    agent any
+
+    triggers {
+        githubPush()   // triggers on GitHub push or merge
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/hitesh1302/selenium-js-automation.git'
+            }
+        }
+
+        stage('Run Application Script') {
+            steps {
+                echo "Running application script..."
+                sh 'chmod +x run.sh'
+                sh './run.sh'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                echo "Running test scripts..."
+                sh 'chmod +x test.sh'
+                sh './test.sh'
+            }
+            post {
+                always {
+                    // Collect test results if you output JUnit XML
+                    junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
+                }
+            }
+        }
+
+        stage('Generate Report') {
+            steps {
+                echo "Generating report..."
+                sh 'chmod +x generate-report.sh'
+                sh './generate-report.sh'
+            }
+        }
+    }
+
+    post {
+        always {
+            emailext(
+                subject: "Build ${currentBuild.currentResult}: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                    <p><b>Build Status:</b> ${currentBuild.currentResult}</p>
+                    <p><b>Project:</b> ${env.JOB_NAME}</p>
+                    <p><b>Build Number:</b> ${env.BUILD_NUMBER}</p>
+                    <p><b>Git Commit:</b> ${env.GIT_COMMIT}</p>
+                    <p><a href="${env.BUILD_URL}">View Console Output</a></p>
+                """,
+                to: "team@example.com",
+                attachmentsPattern: "report/*.html"
+            )
+        }
+    }
+}
