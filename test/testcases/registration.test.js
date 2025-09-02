@@ -44,8 +44,22 @@ describe('Registration page test cases', function () {
         await registrationPage.clickRegister();
 
         const ValidationMessage = await registrationPage.getValidationMessage();
-        //console.log("Message is: ", ValidationMessage);
+        console.log("Message is: ", ValidationMessage);
         expect(ValidationMessage).to.match(/Email hoặc số Điện thoại đã tồn tại./);
         
+    });
+    it('Register with invalid details', async function () {
+        await registrationPage.enterFullName(process.env.FULL_NAME);
+        await registrationPage.selectCountryCode();
+        await registrationPage.enterMobileNumber(process.env.INVALID_MNUMBER);
+        await registrationPage.enterEmail(process.env.INVALID_EMAIL);
+        await registrationPage.enterPassword(process.env.INVALID_PASSWORD);
+        await registrationPage.enterConfirmPassword(process.env.PASSWORD);
+        await registrationPage.acceptTermsAndConditions();
+        await registrationPage.clickRegister();
+
+        const currentUrl = await driver.getCurrentUrl();
+        expect(currentUrl.includes('/registration')).to.be.true;
+  
     });
 });
