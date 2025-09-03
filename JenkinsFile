@@ -54,7 +54,7 @@ pipeline {
                     <p><b>Build Number:</b> ${env.BUILD_NUMBER}</p>
                     <p><a href="${env.BUILD_URL}">View Console Output</a></p>
                 """,
-                to: "team@example.com",
+                to: "hiteshkumawat1302@gmail.com",
                 attachmentsPattern: "report/*.html"
             )
         }
