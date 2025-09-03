@@ -46,27 +46,31 @@ pipeline {
     }
 
     post {
-        always {
-            archiveArtifacts artifacts: 'report/*', fingerprint: true
+    always {
+        archiveArtifacts artifacts: 'report/*', fingerprint: true
 
-            publishHTML([
-                reportDir: 'report',
-                reportFiles: 'mochawesome.html',
-                reportName: 'Mochawesome Report'
-            ])
+        publishHTML([
+            allowMissing: false,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'report',
+            reportFiles: 'mochawesome.html',
+            reportName: 'Mochawesome Report'
+        ])
 
-            emailext(
-                subject: "Build ${currentBuild.currentResult}: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                    <p><b>Build Status:</b> ${currentBuild.currentResult}</p>
-                    <p><b>Job:</b> ${env.JOB_NAME}</p>
-                    <p><b>Build Number:</b> ${env.BUILD_NUMBER}</p>
-                    <p><a href="${env.BUILD_URL}">View Console Output</a></p>
-                    <p><a href="${env.BUILD_URL}artifact/report/mochawesome.html">View Test Report</a></p>
-                """,
-                to: "hiteshkumawat1302@gmail.com",
-                attachmentsPattern: "report/*.html"
-            )
-        }
+        emailext(
+            subject: "Build ${currentBuild.currentResult}: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+            body: """
+                <p><b>Build Status:</b> ${currentBuild.currentResult}</p>
+                <p><b>Job:</b> ${env.JOB_NAME}</p>
+                <p><b>Build Number:</b> ${env.BUILD_NUMBER}</p>
+                <p><a href="${env.BUILD_URL}">View Console Output</a></p>
+                <p><a href="${env.BUILD_URL}artifact/report/mochawesome.html">View Test Report</a></p>
+            """,
+            to: "hiteshkumawat1302@gmail.com",
+            attachmentsPattern: "report/*.html"
+        )
     }
+}
+
 }
