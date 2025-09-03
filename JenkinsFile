@@ -28,11 +28,42 @@ pipeline {
                 // run tests but don’t fail pipeline immediately
                 sh 'npm test || true'
             }
+            post {
+                always {
+                    // Publish JUnit results so Jenkins shows them in Test Results tab
+                    junit allowEmptyResults: true, testResults: 'test-results/*.xml'
+                }
+            }
+        }
+
+        stage('Generate Mochawesome Report') {
+            steps {
+                sh '''
+                    mkdir -p report
+                    if ls mochawesome-report/*.json 1> /dev/null 2>&1; then
+                        npx mochawesome-merge mochawesome-report/*.json > mochawesome.json
+                        npx marge mochawesome.json --reportDir report --inline
+                    else
+                        echo "⚠️ No mochawesome JSON files found, skipping report generation."
+                    fi
+                '''
+            }
         }
     }
 
     post {
         always {
+            archiveArtifacts artifacts: 'report/*', fingerprint: true
+
+            publishHTML([
+                allowMissing: true,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'report',
+                reportFiles: 'mochawesome.html',
+                reportName: 'Mochawesome Report'
+            ])
+
             emailext(
                 subject: "Build ${currentBuild.currentResult}: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
@@ -40,8 +71,10 @@ pipeline {
                     <p><b>Job:</b> ${env.JOB_NAME}</p>
                     <p><b>Build Number:</b> ${env.BUILD_NUMBER}</p>
                     <p><a href="${env.BUILD_URL}">View Console Output</a></p>
+                    <p><a href="${env.BUILD_URL}artifact/report/mochawesome.html">View Mochawesome Report</a></p>
                 """,
-                to: "hiteshkumawat1302@gmail.com"
+                to: "hiteshkumawat1302@gmail.com",
+                attachmentsPattern: "report/*.html"
             )
         }
     }
