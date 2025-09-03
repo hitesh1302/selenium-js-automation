@@ -38,8 +38,12 @@ pipeline {
 
         stage('Generate Report') {
             steps {
-                // If your test runner outputs HTML/PDF report, copy it here
-                sh 'mkdir -p report && cp -r test-reports/* report/ || true'
+        sh '''
+            mkdir -p report
+            cp -r mochawesome-report/* report/ || true
+            cp mochawesome.html report/ || true
+            cp mochawesome.json report/ || true
+        '''
             }
         }
     }
