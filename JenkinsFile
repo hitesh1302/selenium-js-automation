@@ -50,22 +50,25 @@ pipeline {
     }
 
     post {
-        always {
-            echo ">>> Sending email with report..."
-            emailext (
-                to: 'hiteshkumawat1302@gmail.com',
-                subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
-                body: """
+    always {
+        echo ">>> Sending email with report..."
+        emailext (
+            to: 'hiteshkumawat1302@gmail.com',
+            subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
+            body: """
                 Hello Team,<br><br>
                 The build <b>#${env.BUILD_NUMBER}</b> finished with status: <b>${currentBuild.currentResult}</b>.<br><br>
                 <a href="${env.BUILD_URL}">Click here for full console log</a><br>
+                <a href="${env.BUILD_URL}testReport">Click here for JUnit Report</a><br>
                 <a href="${env.BUILD_URL}artifact/report/mochawesome.html">Click here for Mochawesome Report</a><br><br>
                 Regards,<br>
                 Jenkins
-                """,
-                mimeType: 'text/html',
-                attachmentsPattern: 'report/mochawesome.html'
-            )
-        }
+            """,
+            mimeType: 'text/html',
+            attachmentsPattern: 'report/mochawesome.html'
+        )
+        echo ">>> Email sent."
     }
+}
+
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="58.231" tests="7" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-09-04T09:01:07" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login page test cases" timestamp="2025-09-04T09:01:07" tests="4" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/login.test.js" time="30.811" failures="1">
+    <testcase name="Login page test cases Login with valid credentials" time="7.217" classname="Login with valid credentials">
+    </testcase>
+    <testcase name="Login page test cases Login with invalid credentials" time="0.247" classname="Login with invalid credentials">
+      <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span[data-notify=&quot;message&quot;]&quot;}
+  (Session info: chrome=140.0.7339.80)" type="NoSuchElementError"><![CDATA[NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"span[data-notify="message"]"}
+  (Session info: chrome=140.0.7339.80)
+    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:523:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:524:13)
+    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:456:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Driver.execute (node_modules/selenium-webdriver/lib/webdriver.js:745:17)
+    at async toWireValue (node_modules/selenium-webdriver/lib/webdriver.js:149:15)
+    at async /Users/acquaint/Selenium-js-automation/selenium-js-automation/node_modules/selenium-webdriver/lib/webdriver.js:195:16
+    at async forEachKey (node_modules/selenium-webdriver/lib/webdriver.js:189:9)
+    at async convertKeys (node_modules/selenium-webdriver/lib/webdriver.js:194:3)
+    at async Driver.execute (node_modules/selenium-webdriver/lib/webdriver.js:743:22)]]></failure>
+    </testcase>
+    <testcase name="Login page test cases Login with valid credentials using mobile number" time="6.594" classname="Login with valid credentials using mobile number">
+    </testcase>
+    <testcase name="Login page test cases Login with Invalid mobile number" time="3.704" classname="Login with Invalid mobile number">
+    </testcase>
+  </testsuite>
+  <testsuite name="Registration page test cases" timestamp="2025-09-04T09:01:37" tests="3" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/registration.test.js" time="27.419" failures="0">
+    <testcase name="Registration page test cases Register with valid details" time="9.533" classname="Register with valid details">
+    </testcase>
+    <testcase name="Registration page test cases Register with same email and mobile number" time="6.805" classname="Register with same email and mobile number">
+    </testcase>
+    <testcase name="Registration page test cases Register with invalid details" time="2.492" classname="Register with invalid details">
+    </testcase>
+  </testsuite>
+</testsuites>
