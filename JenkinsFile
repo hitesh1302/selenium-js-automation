@@ -25,12 +25,10 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                // run tests but don’t fail pipeline immediately
                 sh 'npm test || true'
             }
             post {
                 always {
-                    // Publish JUnit results so Jenkins shows them in Test Results tab
                     junit allowEmptyResults: true, testResults: 'test-results/*.xml'
                 }
             }
@@ -52,10 +50,10 @@ pipeline {
     }
 
     post {
-    always {
-        mail to: 'qadev.automation23@gmail.com',
-             subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
-             body: "Check console output at ${env.BUILD_URL}"
+        always {
+            mail to: 'qadev.automation23@gmail.com',
+                 subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
+                 body: "Check console output at ${env.BUILD_URL}"
+        }
     }
-}
 }
