@@ -51,7 +51,8 @@ pipeline {
 
     post {
         always {
-            mail to: 'qadev.automation23@gmail.com',
+            echo ">>> Post block is executing..."
+            mail to: 'hiteshkumawat1302@gmail.com',
                  subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
                  body: "Check console output at ${env.BUILD_URL}"
         }
