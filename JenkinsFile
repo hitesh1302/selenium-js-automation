@@ -52,30 +52,10 @@ pipeline {
     }
 
     post {
-        always {
-            archiveArtifacts artifacts: 'report/*', fingerprint: true
-
-            publishHTML([
-                allowMissing: true,
-                alwaysLinkToLastBuild: true,
-                keepAll: true,
-                reportDir: 'report',
-                reportFiles: 'mochawesome.html',
-                reportName: 'Mochawesome Report'
-            ])
-
-            emailext(
-                subject: "Build ${currentBuild.currentResult}: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                    <p><b>Build Status:</b> ${currentBuild.currentResult}</p>
-                    <p><b>Job:</b> ${env.JOB_NAME}</p>
-                    <p><b>Build Number:</b> ${env.BUILD_NUMBER}</p>
-                    <p><a href="${env.BUILD_URL}">View Console Output</a></p>
-                    <p><a href="${env.BUILD_URL}artifact/report/mochawesome.html">View Mochawesome Report</a></p>
-                """,
-                to: "hiteshkumawat1302@gmail.com",
-                attachmentsPattern: "report/*.html"
-            )
-        }
+    always {
+        mail to: 'qadev.automation23@gmail.com',
+             subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
+             body: "Check console output at ${env.BUILD_URL}"
     }
+}
 }
