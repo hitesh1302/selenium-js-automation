@@ -62,5 +62,4 @@ describe('Registration page test cases', function () {
         expect(currentUrl.includes('/registration')).to.be.true;
   
     });
-});
-//Done      
+});   
