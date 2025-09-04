@@ -53,7 +53,7 @@ pipeline {
     always {
         echo ">>> Sending email with report..."
         emailext (
-            echo "Current Build Result: ${currentBuild.currentResult}",
+            echo ">>> Preparing email content",
             to: 'hiteshkumawat1302@gmail.com',
             subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
             body: """
