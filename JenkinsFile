@@ -53,8 +53,10 @@ pipeline {
         always {
             echo ">>> Post block is executing..."
             mail to: 'hiteshkumawat1302@gmail.com',
-                 subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
-                 body: "Check console output at ${env.BUILD_URL}"
+            subject: "Test Email from Jenkins",
+             body: "This is a test email from Jenkins post block."
+                // subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
+               //  body: "Check console output at ${env.BUILD_URL}"
         }
     }
 }
