@@ -51,12 +51,21 @@ pipeline {
 
     post {
         always {
-            echo ">>> Post block is executing..."
-            mail to: 'hiteshkumawat1302@gmail.com',
-            subject: "Test Email from Jenkins",
-             body: "This is a test email from Jenkins post block."
-                // subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
-               //  body: "Check console output at ${env.BUILD_URL}"
+            echo ">>> Sending email with report..."
+            emailext (
+                to: 'hiteshkumawat1302@gmail.com',
+                subject: "Build #${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
+                body: """
+                Hello Team,<br><br>
+                The build <b>#${env.BUILD_NUMBER}</b> finished with status: <b>${currentBuild.currentResult}</b>.<br><br>
+                <a href="${env.BUILD_URL}">Click here for full console log</a><br>
+                <a href="${env.BUILD_URL}artifact/report/mochawesome.html">Click here for Mochawesome Report</a><br><br>
+                Regards,<br>
+                Jenkins
+                """,
+                mimeType: 'text/html',
+                attachmentsPattern: 'report/mochawesome.html'
+            )
         }
     }
 }
