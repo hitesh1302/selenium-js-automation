@@ -7,6 +7,7 @@ class LoginPage {
   }
 
   async open() {
+    await this.driver.manage().window().maximize();
     await this.driver.get(process.env.BASE_URL + 'users/login');
   }
 

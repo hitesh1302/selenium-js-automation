@@ -34,6 +34,15 @@ describe ('Add product to cart test cases', function (){
         await addProductToCartPage.clickOnAddToCartButton();
         await addProductToCartPage.clickAlertAddCartBtn();
     });
-
+    it('Buy Now product', async function(){
+        this.timeout(50000);
+        await addProductToCartPage.open();
+        this.timeout(100000);
+        await addProductToCartPage.clickOnAddToCartButton();
+        await addProductToCartPage.clickAlertBuyNowBtn();
+        const currentUrl = await driver.getCurrentUrl();
+        expect(currentUrl).to.include('/checkout');
+ 
+    });
 
 });
