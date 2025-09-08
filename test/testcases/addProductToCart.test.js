@@ -34,7 +34,7 @@ describe ('Add product to cart test cases', function (){
         await addProductToCartPage.clickOnAddToCartButton();
         await addProductToCartPage.clickAlertAddCartBtn();
     });
-    it.only('Buy Now product', async function(){
+    it('Buy Now product', async function(){
         this.timeout(50000);
         await addProductToCartPage.open();
         this.timeout(100000);
