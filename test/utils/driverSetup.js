@@ -18,5 +18,5 @@ async function quitDriver() {
         await driver.quit();
         driver = null;
     } 
-}
+}   
 module.exports = {getDriver, quitDriver};
