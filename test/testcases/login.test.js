@@ -58,6 +58,7 @@ describe('Login page test cases', () => {
         const currentUrl = await driver.getCurrentUrl();
         expect(currentUrl.includes('/dashboard')).to.be.true;
     })
+
     it('Login with Invalid mobile number', async() => {
         await loginPage.selectCountryCode();
         await loginPage.enterMobileNumber(process.env.INVALID_MNUMBER);
