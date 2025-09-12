@@ -12,7 +12,7 @@ class LoginPage {
   }
 
   async selectCountryCode(){
-    const countryCodeDropDown = await this.driver.findElement(By.className('iti__selected-flag'));
+    const countryCodeDropDown = await this.driver.wait(until.elementLocated(By.className('iti__selected-flag')), 10000);
     await countryCodeDropDown.click();
 
     await this.driver.wait(until.elementLocated(By.id('country-listbox')), 5000);
@@ -27,7 +27,7 @@ class LoginPage {
   }
 
   async changeToEmail(){
-    const emailTab = await this.driver.findElement(By.css('button[type="button"]'));
+    const emailTab = await this.driver.wait(until.elementLocated(By.css('button[type="button"]')), 20000);
     await emailTab.click();
   }
 
@@ -44,22 +44,27 @@ class LoginPage {
   }
 
   async clickLogin() {
-    const loginBtn = await this.driver.findElement(By.css('button[type="submit"]'));
+    const loginBtn = await this.driver.wait(until.elementLocated(By.css('button[type="submit"]')), 20000);
     await loginBtn.click();
   }
 
   async getErrorMessage() {
-    const locateElement = By.css('span[data-notify="message"]');
+    // Wait until the element is located
+    const errorElement = await this.driver.wait(
+        until.elementLocated(By.css('span[data-notify="message"]')),
+        5000
+    );
 
-  // Wait until the element contains non-empty text
-  await this.driver.wait(until.elementTextMatches(
-    this.driver.findElement(locateElement),
-    /.+/   // regex: one or more characters
-  ), 5000, "Error message did not appear");
+    // Wait until the element contains non-empty text
+    await this.driver.wait(
+        until.elementTextMatches(errorElement, /.+/),
+        5000,
+        'Error message did not appear'
+    );
 
-  const errorElement = await this.driver.findElement(locateElement);
-  return (await errorElement.getText()).trim();
-  }
+    // Return the trimmed text
+    return (await errorElement.getText()).trim();
+    }
 
   async isLoggedIn() {
   try {

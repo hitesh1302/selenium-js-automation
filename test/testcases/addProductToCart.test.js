@@ -19,30 +19,30 @@ describe ('Add product to cart test cases', function (){
         await loginPage.enterMobileNumber(process.env.VALID_MNUMBER);
         await loginPage.enterPassword(process.env.VALID_PASSWORD);
         await loginPage.clickLogin();
+        await driver.sleep(5000);
         const currentUrl = await driver.getCurrentUrl();
         expect(currentUrl.includes('/dashboard')).to.be.true;
 
     });
-    /*afterEach(async function(){
+   afterEach(async function(){
         await quitDriver(driver);
-    });*/
+    });
     
     it('Add product to cart', async function(){
-        this.timeout(50000);
+        this.timeout(10000);
         await addProductToCartPage.open();
-        this.timeout(100000);
+        this.timeout(10000);
         await addProductToCartPage.clickOnAddToCartButton();
         await addProductToCartPage.clickAlertAddCartBtn();
     });
     it('Buy Now product', async function(){
-        this.timeout(50000);
+        this.timeout(10000);
         await addProductToCartPage.open();
-        this.timeout(100000);
+        this.timeout(20000);
         await addProductToCartPage.clickOnAddToCartButton();
         await addProductToCartPage.clickAlertBuyNowBtn();
         const currentUrl = await driver.getCurrentUrl();
         expect(currentUrl).to.include('/checkout');
  
     });
-
 });
