@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="58.231" tests="7" failures="1">
-  <testsuite name="Root Suite" timestamp="2025-09-04T09:01:07" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="147.061" tests="12" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-09-12T12:56:44" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Login page test cases" timestamp="2025-09-04T09:01:07" tests="4" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/login.test.js" time="30.811" failures="1">
-    <testcase name="Login page test cases Login with valid credentials" time="7.217" classname="Login with valid credentials">
+  <testsuite name="Add product to cart test cases" timestamp="2025-09-12T12:56:44" tests="2" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/addProductToCart.test.js" time="46.055" failures="0">
+    <testcase name="Add product to cart test cases Add product to cart" time="8.560" classname="Add product to cart">
     </testcase>
-    <testcase name="Login page test cases Login with invalid credentials" time="0.247" classname="Login with invalid credentials">
-      <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span[data-notify=&quot;message&quot;]&quot;}
-  (Session info: chrome=140.0.7339.80)" type="NoSuchElementError"><![CDATA[NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"span[data-notify="message"]"}
-  (Session info: chrome=140.0.7339.80)
-    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:523:15)
-    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:524:13)
-    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:456:28)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async Driver.execute (node_modules/selenium-webdriver/lib/webdriver.js:745:17)
-    at async toWireValue (node_modules/selenium-webdriver/lib/webdriver.js:149:15)
-    at async /Users/acquaint/Selenium-js-automation/selenium-js-automation/node_modules/selenium-webdriver/lib/webdriver.js:195:16
-    at async forEachKey (node_modules/selenium-webdriver/lib/webdriver.js:189:9)
-    at async convertKeys (node_modules/selenium-webdriver/lib/webdriver.js:194:3)
-    at async Driver.execute (node_modules/selenium-webdriver/lib/webdriver.js:743:22)]]></failure>
-    </testcase>
-    <testcase name="Login page test cases Login with valid credentials using mobile number" time="6.594" classname="Login with valid credentials using mobile number">
-    </testcase>
-    <testcase name="Login page test cases Login with Invalid mobile number" time="3.704" classname="Login with Invalid mobile number">
+    <testcase name="Add product to cart test cases Buy Now product" time="13.891" classname="Buy Now product">
     </testcase>
   </testsuite>
-  <testsuite name="Registration page test cases" timestamp="2025-09-04T09:01:37" tests="3" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/registration.test.js" time="27.419" failures="0">
-    <testcase name="Registration page test cases Register with valid details" time="9.533" classname="Register with valid details">
+  <testsuite name="Favorite and Compare Events Test Cases" timestamp="2025-09-12T12:57:30" tests="2" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/favoriteCompareEvents.test.js" time="17.569" failures="0">
+    <testcase name="Favorite and Compare Events Test Cases Add event to favorite as a non-logged in user" time="2.114" classname="Add event to favorite as a non-logged in user">
     </testcase>
-    <testcase name="Registration page test cases Register with same email and mobile number" time="6.805" classname="Register with same email and mobile number">
+    <testcase name="Favorite and Compare Events Test Cases Add event to compare as a non-logged in user" time="2.546" classname="Add event to compare as a non-logged in user">
     </testcase>
-    <testcase name="Registration page test cases Register with invalid details" time="2.492" classname="Register with invalid details">
+  </testsuite>
+  <testsuite name="Login page test cases" timestamp="2025-09-12T12:57:48" tests="4" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/login.test.js" time="48.441" failures="1">
+    <testcase name="Login page test cases Login with valid credentials" time="7.916" classname="Login with valid credentials">
+    </testcase>
+    <testcase name="Login page test cases Login with invalid credentials" time="3.662" classname="Login with invalid credentials">
+    </testcase>
+    <testcase name="Login page test cases Login with valid credentials using mobile number" time="10.160" classname="Login with valid credentials using mobile number">
+    </testcase>
+    <testcase name="Login page test cases Login with Invalid mobile number" time="13.689" classname="Login with Invalid mobile number">
+      <failure message="Waiting for element to be located By(css selector, span[data-notify=&quot;message&quot;])
+Wait timed out after 5040ms" type="TimeoutError"><![CDATA[TimeoutError: Waiting for element to be located By(css selector, span[data-notify="message"])
+Wait timed out after 5040ms
+    at /Users/acquaint/Selenium-js-automation/selenium-js-automation/node_modules/selenium-webdriver/lib/webdriver.js:929:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Login page test cases" timestamp="2025-09-12T12:58:36" tests="1" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/parellelRunLogin.test.js" time="6.376" failures="0">
+    <testcase name="Login page test cases Login with valid credentials using mobile number" time="0.000" classname="Login with valid credentials using mobile number">
+    </testcase>
+  </testsuite>
+  <testsuite name="Registration page test cases" timestamp="2025-09-12T12:58:43" tests="3" file="/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/registration.test.js" time="28.617" failures="0">
+    <testcase name="Registration page test cases Register with valid details" time="11.301" classname="Register with valid details">
+    </testcase>
+    <testcase name="Registration page test cases Register with same email and mobile number" time="5.357" classname="Register with same email and mobile number">
+    </testcase>
+    <testcase name="Registration page test cases Register with invalid details" time="3.708" classname="Register with invalid details">
     </testcase>
   </testsuite>
 </testsuites>

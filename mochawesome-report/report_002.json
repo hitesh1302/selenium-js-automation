@@ -1,0 +1,592 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 12,
+    "passes": 11,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-09-12T12:56:44.706Z",
+    "end": "2025-09-12T12:59:11.767Z",
+    "duration": 147061,
+    "testsRegistered": 12,
+    "passPercent": 91.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c3baefcc-f7a3-430d-8081-23ad933d87be",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4ba6ffe-e10b-4d32-9668-28371408588c",
+          "title": "Add product to cart test cases",
+          "fullFile": "/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/addProductToCart.test.js",
+          "file": "/test/testcases/addProductToCart.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Add product to cart test cases\"",
+              "fullTitle": "Add product to cart test cases \"before each\" hook in \"Add product to cart test cases\"",
+              "timedOut": false,
+              "duration": 9388,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(30000);\ndriver = await getDriver();\nloginPage = new LoginPage(driver);\naddProductToCartPage = new AddProductToCartPage(driver);\nawait loginPage.open();\nawait loginPage.selectCountryCode();\nawait loginPage.enterMobileNumber(process.env.VALID_MNUMBER);\nawait loginPage.enterPassword(process.env.VALID_PASSWORD);\nawait loginPage.clickLogin();\nawait driver.sleep(5000);\nconst currentUrl = await driver.getCurrentUrl();\nexpect(currentUrl.includes('/dashboard')).to.be.true;",
+              "err": {},
+              "uuid": "cabdb65f-f2b4-40d6-b610-3c29d4e78e01",
+              "parentUUID": "a4ba6ffe-e10b-4d32-9668-28371408588c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Add product to cart test cases\"",
+              "fullTitle": "Add product to cart test cases \"after each\" hook in \"Add product to cart test cases\"",
+              "timedOut": false,
+              "duration": 54,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await quitDriver(driver);",
+              "err": {},
+              "uuid": "77c6b2d2-6dd0-4953-b372-8b3e60170276",
+              "parentUUID": "a4ba6ffe-e10b-4d32-9668-28371408588c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Add product to cart",
+              "fullTitle": "Add product to cart test cases Add product to cart",
+              "timedOut": false,
+              "duration": 8560,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(10000);\nawait addProductToCartPage.open();\nthis.timeout(10000);\nawait addProductToCartPage.clickOnAddToCartButton();\nawait addProductToCartPage.clickAlertAddCartBtn();",
+              "err": {},
+              "uuid": "1c1d8587-afaf-4bea-8115-f13e693e7ac7",
+              "parentUUID": "a4ba6ffe-e10b-4d32-9668-28371408588c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Buy Now product",
+              "fullTitle": "Add product to cart test cases Buy Now product",
+              "timedOut": false,
+              "duration": 13891,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(10000);\nawait addProductToCartPage.open();\nthis.timeout(20000);\nawait addProductToCartPage.clickOnAddToCartButton();\nawait addProductToCartPage.clickAlertBuyNowBtn();\nconst currentUrl = await driver.getCurrentUrl();\nexpect(currentUrl).to.include('/checkout');",
+              "err": {},
+              "uuid": "ebcf175e-712f-4404-a00a-a24c08bc9a76",
+              "parentUUID": "a4ba6ffe-e10b-4d32-9668-28371408588c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1c1d8587-afaf-4bea-8115-f13e693e7ac7",
+            "ebcf175e-712f-4404-a00a-a24c08bc9a76"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22451,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "dc11b8a4-837b-4c0f-bff6-7ee48b2e0574",
+          "title": "Favorite and Compare Events Test Cases",
+          "fullFile": "/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/favoriteCompareEvents.test.js",
+          "file": "/test/testcases/favoriteCompareEvents.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Favorite and Compare Events Test Cases\"",
+              "fullTitle": "Favorite and Compare Events Test Cases \"before each\" hook in \"Favorite and Compare Events Test Cases\"",
+              "timedOut": false,
+              "duration": 7217,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(30000);\ndriver = await getDriver();\nloginPage = new LoginPage(driver);\naddProductToCartPage = new AddProductToCartPage(driver);\nfavoriteCompareEventPage = new FavoriteCompareEventPage(driver);\nawait favoriteCompareEventPage.open();",
+              "err": {},
+              "uuid": "5e36ed71-46e5-4910-b60f-80a33f1d8195",
+              "parentUUID": "dc11b8a4-837b-4c0f-bff6-7ee48b2e0574",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Favorite and Compare Events Test Cases\"",
+              "fullTitle": "Favorite and Compare Events Test Cases \"after each\" hook in \"Favorite and Compare Events Test Cases\"",
+              "timedOut": false,
+              "duration": 106,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await quitDriver(driver);",
+              "err": {},
+              "uuid": "341d5bee-f104-44f7-93e3-d24bc3667139",
+              "parentUUID": "dc11b8a4-837b-4c0f-bff6-7ee48b2e0574",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Add event to favorite as a non-logged in user",
+              "fullTitle": "Favorite and Compare Events Test Cases Add event to favorite as a non-logged in user",
+              "timedOut": false,
+              "duration": 2114,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(50000);\nawait favoriteCompareEventPage.clickOnHeartIcon();\nconst errorMessage = await favoriteCompareEventPage.getErrorMessage();\nconsole.log(errorMessage);\nexpect(errorMessage).to.match(new RegExp(process.env.LIKE_ERROR_MESSAGE));",
+              "err": {},
+              "uuid": "d3b9ac18-e83b-4fe6-bfe6-a8ae6f45d19d",
+              "parentUUID": "dc11b8a4-837b-4c0f-bff6-7ee48b2e0574",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add event to compare as a non-logged in user",
+              "fullTitle": "Favorite and Compare Events Test Cases Add event to compare as a non-logged in user",
+              "timedOut": false,
+              "duration": 2546,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(50000);\nawait favoriteCompareEventPage.clickOnCompareIcon();\nthis.timeout(100000);\nconst errorMessage = await favoriteCompareEventPage.getErrorMessage();\nconsole.log(errorMessage);\nexpect(errorMessage).to.match(new RegExp(process.env.COMPARE_VALIDATION_MESSAGE));",
+              "err": {},
+              "uuid": "071d471e-75b3-4f79-8def-b3339a02054d",
+              "parentUUID": "dc11b8a4-837b-4c0f-bff6-7ee48b2e0574",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d3b9ac18-e83b-4fe6-bfe6-a8ae6f45d19d",
+            "071d471e-75b3-4f79-8def-b3339a02054d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4660,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "207fbb77-e044-4d30-a10a-2e890c850471",
+          "title": "Login page test cases",
+          "fullFile": "/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/login.test.js",
+          "file": "/test/testcases/login.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login page test cases\"",
+              "fullTitle": "Login page test cases \"before each\" hook in \"Login page test cases\"",
+              "timedOut": false,
+              "duration": 3743,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(30000);    \n    driver = await getDriver();\n    loginPage = new LoginPage(driver);\n    await loginPage.open();",
+              "err": {},
+              "uuid": "e6393614-cdb7-4d24-abf2-19575b321db3",
+              "parentUUID": "207fbb77-e044-4d30-a10a-2e890c850471",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login page test cases\"",
+              "fullTitle": "Login page test cases \"after each\" hook in \"Login page test cases\"",
+              "timedOut": false,
+              "duration": 53,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await quitDriver(driver);",
+              "err": {},
+              "uuid": "8c812c40-d31c-4d4b-b0ec-7800e8dd3e25",
+              "parentUUID": "207fbb77-e044-4d30-a10a-2e890c850471",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login with valid credentials",
+              "fullTitle": "Login page test cases Login with valid credentials",
+              "timedOut": false,
+              "duration": 7916,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(30000);\nawait loginPage.changeToEmail();\nawait loginPage.enterUsername(process.env.VALID_USERNAME);\nawait loginPage.enterPassword(process.env.VALID_PASSWORD);\nawait loginPage.clickLogin();\nawait driver.sleep(5000);\nconst currentUrl = await driver.getCurrentUrl();\nconsole.log(currentUrl);\nexpect(currentUrl.includes('/dashboard')).to.be.true;",
+              "err": {},
+              "uuid": "cbe80247-db54-4e9d-812b-ebb6a116e787",
+              "parentUUID": "207fbb77-e044-4d30-a10a-2e890c850471",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid credentials",
+              "fullTitle": "Login page test cases Login with invalid credentials",
+              "timedOut": false,
+              "duration": 3662,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(30000);\nawait loginPage.changeToEmail();\nawait loginPage.enterUsername(process.env.INVALID_USERNAME);\nawait loginPage.enterPassword(process.env.INVALID_PASSWORD);\nawait loginPage.clickLogin();\n//const currentUrl = await driver.getCurrentUrl();\n//expect(currentUrl.includes('/dashboard')).to.be.false; \nthis.timeout(10000);\nconst errorMessage = await loginPage.getErrorMessage();\nconsole.log(errorMessage);\nexpect(errorMessage).to.match(/Thông tin Đăng nhập không hợp lệ/);",
+              "err": {},
+              "uuid": "085ef28c-eb0d-49cd-a8a5-00b601a3f7c7",
+              "parentUUID": "207fbb77-e044-4d30-a10a-2e890c850471",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with valid credentials using mobile number",
+              "fullTitle": "Login page test cases Login with valid credentials using mobile number",
+              "timedOut": false,
+              "duration": 10160,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(30000);\n  await loginPage.selectCountryCode();\n  await loginPage.enterMobileNumber(process.env.VALID_MNUMBER);\n  await loginPage.enterPassword(process.env.VALID_PASSWORD);\n  await loginPage.clickLogin();\n  await driver.sleep(5000);\n  const currentUrl = await driver.getCurrentUrl();\n  console.log(currentUrl);\n  expect(currentUrl.includes('/dashboard')).to.be.true;",
+              "err": {},
+              "uuid": "ed4e385b-17a1-492c-96fa-017ad8799436",
+              "parentUUID": "207fbb77-e044-4d30-a10a-2e890c850471",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with Invalid mobile number",
+              "fullTitle": "Login page test cases Login with Invalid mobile number",
+              "timedOut": false,
+              "duration": 13689,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(30000);\n  await loginPage.selectCountryCode();\n  await loginPage.enterMobileNumber(process.env.INVALID_MNUMBER);\n  await loginPage.enterPassword(process.env.INVALID_PASSWORD);\n  await loginPage.clickLogin();\n   await driver.sleep(5000);\n  const errorMessage = await loginPage.getErrorMessage();\n  \n  expect(errorMessage).to.match(/Thông tin Đăng nhập không hợp lệ/);",
+              "err": {
+                "message": "TimeoutError: Waiting for element to be located By(css selector, span[data-notify=\"message\"])\nWait timed out after 5040ms",
+                "estack": "TimeoutError: Waiting for element to be located By(css selector, span[data-notify=\"message\"])\nWait timed out after 5040ms\n    at /Users/acquaint/Selenium-js-automation/selenium-js-automation/node_modules/selenium-webdriver/lib/webdriver.js:929:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+                "diff": null
+              },
+              "uuid": "b2d3fc7d-37b7-4fa3-b095-6749ea4e05f5",
+              "parentUUID": "207fbb77-e044-4d30-a10a-2e890c850471",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cbe80247-db54-4e9d-812b-ebb6a116e787",
+            "085ef28c-eb0d-49cd-a8a5-00b601a3f7c7",
+            "ed4e385b-17a1-492c-96fa-017ad8799436"
+          ],
+          "failures": [
+            "b2d3fc7d-37b7-4fa3-b095-6749ea4e05f5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 35427,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "23e78770-fef5-45fe-950c-0f6b0e4ffe00",
+          "title": "Login page test cases",
+          "fullFile": "/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/parellelRunLogin.test.js",
+          "file": "/test/testcases/parellelRunLogin.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login page test cases\"",
+              "fullTitle": "Login page test cases \"before each\" hook in \"Login page test cases\"",
+              "timedOut": false,
+              "duration": 6314,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "drivers = await getDrivers();\nloginPage = new LoginPage(drivers);\nthis.timeout(40000);\nawait loginPage.open();",
+              "err": {},
+              "uuid": "26d3a574-d92b-4b8f-9dd8-0eee5fd2c100",
+              "parentUUID": "23e78770-fef5-45fe-950c-0f6b0e4ffe00",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login page test cases\"",
+              "fullTitle": "Login page test cases \"after each\" hook in \"Login page test cases\"",
+              "timedOut": false,
+              "duration": 59,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await quitDrivers();",
+              "err": {},
+              "uuid": "ed39600b-b869-4d0c-80da-ccccba1e1d82",
+              "parentUUID": "23e78770-fef5-45fe-950c-0f6b0e4ffe00",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login with valid credentials using mobile number",
+              "fullTitle": "Login page test cases Login with valid credentials using mobile number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "for (let browser in this.drivers){\nawait loginPage.selectCountryCode();\nawait loginPage.enterMobileNumber(process.env.VALID_MNUMBER);\nawait loginPage.enterPassword(process.env.VALID_PASSWORD);\nawait loginPage.clickLogin();\nconst currentUrl = await drivers[browser].getCurrentUrl();\nexpect(currentUrl.includes('/dashboard')).to.be.true;\n}",
+              "err": {},
+              "uuid": "bfe95b99-2269-45a4-a08f-1c31b4c99982",
+              "parentUUID": "23e78770-fef5-45fe-950c-0f6b0e4ffe00",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bfe95b99-2269-45a4-a08f-1c31b4c99982"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "3d738fd9-17b7-4b28-ae09-fba1036b61a2",
+          "title": "Registration page test cases",
+          "fullFile": "/Users/acquaint/Selenium-js-automation/selenium-js-automation/test/testcases/registration.test.js",
+          "file": "/test/testcases/registration.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Registration page test cases\"",
+              "fullTitle": "Registration page test cases \"before each\" hook in \"Registration page test cases\"",
+              "timedOut": false,
+              "duration": 1851,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(30000);\ndriver = await getDriver();\nregistrationPage = new RegistrationPage(driver);\nawait registrationPage.open();",
+              "err": {},
+              "uuid": "8e04cfed-5977-4058-b37b-669452e275ef",
+              "parentUUID": "3d738fd9-17b7-4b28-ae09-fba1036b61a2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Registration page test cases\"",
+              "fullTitle": "Registration page test cases \"after each\" hook in \"Registration page test cases\"",
+              "timedOut": false,
+              "duration": 56,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await quitDriver(driver);",
+              "err": {},
+              "uuid": "5395eaad-9eb4-4e6e-ac2f-7a076792280a",
+              "parentUUID": "3d738fd9-17b7-4b28-ae09-fba1036b61a2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Register with valid details",
+              "fullTitle": "Registration page test cases Register with valid details",
+              "timedOut": false,
+              "duration": 11301,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const fakeUser = getFakeUser();\nawait registrationPage.enterFullName(fakeUser.name);\nawait registrationPage.selectCountryCode();\nawait registrationPage.enterMobileNumber(fakeUser.phone);\nawait registrationPage.enterEmail(fakeUser.email);\nawait registrationPage.enterPassword(process.env.PASSWORD);\nawait registrationPage.enterConfirmPassword(process.env.CONFIRM_PASSWORD);\nawait registrationPage.acceptTermsAndConditions();\nawait registrationPage.clickRegister();\nconst valiationMessage = await registrationPage.getValidationMessage();\nexpect(valiationMessage).to.match(/Ghi danh thành công. Vui lòng xác minh email của bạn./);",
+              "err": {},
+              "uuid": "2c61fe90-5d5e-41a0-9967-83fb21b2e80a",
+              "parentUUID": "3d738fd9-17b7-4b28-ae09-fba1036b61a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register with same email and mobile number",
+              "fullTitle": "Registration page test cases Register with same email and mobile number",
+              "timedOut": false,
+              "duration": 5357,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await registrationPage.enterFullName(process.env.FULL_NAME);\nawait registrationPage.selectCountryCode();\nawait registrationPage.enterMobileNumber(process.env.MNUMBER);\nawait registrationPage.enterEmail(process.env.EMAIL_ID);\nawait registrationPage.enterPassword(process.env.PASSWORD);\nawait registrationPage.enterConfirmPassword(process.env.CONFIRM_PASSWORD);\nawait registrationPage.acceptTermsAndConditions();\nawait registrationPage.clickRegister();\nconst ValidationMessage = await registrationPage.getValidationMessage();\nconsole.log(\"Message is: \", ValidationMessage);\nexpect(ValidationMessage).to.match(/Email hoặc số Điện thoại đã tồn tại./);",
+              "err": {},
+              "uuid": "f8f75614-0924-4715-be58-ee456bb92595",
+              "parentUUID": "3d738fd9-17b7-4b28-ae09-fba1036b61a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register with invalid details",
+              "fullTitle": "Registration page test cases Register with invalid details",
+              "timedOut": false,
+              "duration": 3708,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await registrationPage.enterFullName(process.env.FULL_NAME);\nawait registrationPage.selectCountryCode();\nawait registrationPage.enterMobileNumber(process.env.INVALID_MNUMBER);\nawait registrationPage.enterEmail(process.env.INVALID_EMAIL);\nawait registrationPage.enterPassword(process.env.INVALID_PASSWORD);\nawait registrationPage.enterConfirmPassword(process.env.PASSWORD);\nawait registrationPage.acceptTermsAndConditions();\nawait registrationPage.clickRegister();\nconst currentUrl = await driver.getCurrentUrl();\nexpect(currentUrl.includes('/registration')).to.be.true;",
+              "err": {},
+              "uuid": "cf87dd69-77dc-40d3-9e46-d5710428d6fb",
+              "parentUUID": "3d738fd9-17b7-4b28-ae09-fba1036b61a2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2c61fe90-5d5e-41a0-9967-83fb21b2e80a",
+            "f8f75614-0924-4715-be58-ee456bb92595",
+            "cf87dd69-77dc-40d3-9e46-d5710428d6fb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20366,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "reportFilename": "report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
