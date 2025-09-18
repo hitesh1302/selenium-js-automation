@@ -57,7 +57,7 @@ class FavoriteCompareEventPage {
         until.elementLocated(By.css('span[data-notify="message"]')),
         5000
     );
-
+    
     // Wait until the element contains non-empty text
     await this.driver.wait(
         until.elementTextMatches(errorElement, /.+/),
