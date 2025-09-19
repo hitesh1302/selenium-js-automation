@@ -21,13 +21,14 @@ describe ('Delete My Account Test', function () {
         await loginPage.enterPassword(process.env.VALID_PASSWORD);
         await loginPage.clickLogin();
     });
-    /*afterEach(async function () {
+    afterEach(async function () {
         await quitDriver(driver);
-    });*/   
+    }); 
 
     it('Verify that user can delete their account successfully', async function () {
         this.timeout(20000);
         await deleteMyAccountPage.clickDeleteMyAccountTextLink();
-        await driver.switchTo().alert().accept();
+        await deleteCancelDeleteMyAccountButton();
+        
 });
 });
