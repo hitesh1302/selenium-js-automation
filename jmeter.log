@@ -1,0 +1,835 @@
+2025-09-19 11:59:51,724 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-09-19 11:59:51,753 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2025-09-19 11:59:51,753 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: Version 5.6.3
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: java.version=21.0.8
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: os.name=Mac OS X
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: os.arch=aarch64
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: os.version=15.5
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-09-19 11:59:51,757 INFO o.a.j.JMeter: java.awt.headless=null
+2025-09-19 11:59:51,758 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-09-19 11:59:51,758 INFO o.a.j.JMeter: Available Processors =8
+2025-09-19 11:59:51,764 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-09-19 11:59:51,764 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-09-19 11:59:51,764 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
+2025-09-19 11:59:51,764 INFO o.a.j.JMeter: user.dir  =/Users/acquaint/Selenium-js-automation/selenium-js-automation
+2025-09-19 11:59:51,764 INFO o.a.j.JMeter: PWD       =/Users/acquaint/Selenium-js-automation/selenium-js-automation
+2025-09-19 11:59:51,766 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: acquaints-Mac-mini-2.local FullName: localhost
+2025-09-19 11:59:51,772 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2025-09-19 11:59:52,054 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2025-09-19 11:59:52,998 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.action.Command], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 11:59:53,065 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.gui.plugin.MenuCreator], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 11:59:53,133 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-68376ee6529f82edcb10b9d6d66e22c3-gui
+2025-09-19 11:59:55,527 INFO o.j.r.PluginManager: Plugins Status: [jpgc-plugins-manager=1.9, jmeter-core=5.6.3, jmeter-ftp=5.6.3, jmeter-http=5.6.3, jmeter-jdbc=5.6.3, jmeter-jms=5.6.3, jmeter-junit=5.6.3, jmeter-java=5.6.3, jmeter-ldap=5.6.3, jmeter-mail=5.6.3, jmeter-mongodb=5.6.3, jmeter-native=5.6.3, jmeter-tcp=5.6.3, jmeter-components=5.6.3]
+2025-09-19 11:59:55,527 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-plugins-manager]
+2025-09-19 12:00:24,067 INFO o.a.j.s.FileServer: Default base='/Users/acquaint/Selenium-js-automation/selenium-js-automation'
+2025-09-19 12:00:24,068 INFO o.a.j.g.a.Load: Loading file: /Users/acquaint/Recording Controller.jmx
+2025-09-19 12:00:24,068 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 12:00:24,154 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-09-19 12:00:24,158 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-09-19 12:00:24,158 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-09-19 12:00:24,159 INFO o.a.j.s.SaveService: Loading file: /Users/acquaint/Recording Controller.jmx
+2025-09-19 12:00:24,175 WARN o.j.r.p.TestPlanAnalyzer: Cannot parse file: /Users/acquaint/Recording Controller.jmx
+org.xml.sax.SAXParseException: Character reference "&#x0" is an invalid XML character.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source) ~[xercesImpl-2.12.2.jar:?]
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source) ~[xercesImpl-2.12.2.jar:?]
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:122) ~[?:?]
+	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.getNodeListWithClassNames(TestPlanAnalyzer.java:112) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.TestPlanAnalyzer.analyze(TestPlanAnalyzer.java:37) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.analyzeTestPlan(PluginSuggester.java:51) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.findPluginsToInstall(PluginSuggester.java:44) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.plugins.PluginSuggester.checkAndSuggest(PluginSuggester.java:28) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.jmeterplugins.repository.logging.LoggerAppender.append(LoggerAppender.java:33) ~[jmeter-plugins-manager-1.9.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:160) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:133) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:124) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:88) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:705) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:663) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:639) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:575) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:92) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:169) ~[log4j-core-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.spi.AbstractLogger.tryLogMessage(AbstractLogger.java:2933) ~[log4j-api-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageTrackRecursion(AbstractLogger.java:2886) ~[log4j-api-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2868) ~[log4j-api-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:2664) ~[log4j-api-2.22.1.jar:2.22.1]
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:2429) ~[log4j-api-2.22.1.jar:2.22.1]
+	at org.apache.logging.slf4j.Log4jLogger.info(Log4jLogger.java:184) ~[log4j-slf4j-impl-2.22.1.jar:2.22.1]
+	at org.apache.jmeter.save.SaveService.loadTree(SaveService.java:425) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:131) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Load.loadProjectFile(Load.java:103) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.Load.doActionAfterCheck(Load.java:90) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.AbstractActionWithNoRunningTest.doAction(AbstractActionWithNoRunningTest.java:44) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:83) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:65) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) [?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2025-09-19 12:00:24,195 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-09-19 12:00:24,195 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-09-19 12:00:24,195 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-09-19 12:00:24,195 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-09-19 12:00:24,195 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-09-19 12:00:24,195 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-09-19 12:00:24,560 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2025-09-19 12:00:24,560 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/proxyserver.jks
+2025-09-19 12:00:24,769 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-09-19 12:00:24,769 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-09-19 12:00:24,770 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-09-19 12:00:24,770 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-09-19 12:00:24,830 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:00:24,839 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:00:24,899 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 12:00:55,662 INFO o.a.j.g.a.Load: Loading file: /Users/acquaint/Thread Group.jmx
+2025-09-19 12:00:55,662 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 12:00:55,662 INFO o.a.j.s.SaveService: Loading file: /Users/acquaint/Thread Group.jmx
+2025-09-19 12:00:55,749 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:00:55,756 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:00:55,796 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 12:04:10,295 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 12:04:18,358 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:04:18,374 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:04:22,208 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:04:22,209 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:04:22,209 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:04:22,210 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-09-19 12:04:22,210 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-09-19 12:04:22,235 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:04:22,239 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:04:22,285 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:04:22,285 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:04:22,285 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:04:22,285 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:04:22,287 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:04:22,287 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:04:22,287 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:04:22,291 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = acquaints-Mac-mini-2.local
+2025-09-19 12:04:22,294 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-09-19 12:04:22,355 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2025-09-19 12:04:22,356 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2025-09-19 12:04:22,356 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2025-09-19 12:04:22,390 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2025-09-19 12:04:22,391 INFO o.a.j.u.SSLManager: KeyStore created OK
+2025-09-19 12:04:22,391 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2025-09-19 12:04:23,288 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:04:23,288 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:04:23,290 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:04:23,291 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:09:02,751 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:09:02,752 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:09:02,752 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:09:02,799 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:09:02,799 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:09:02,799 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:09:02,799 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:09:02,799 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:09:02,799 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:09:02,799 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:09:03,121 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:09:03,121 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:09:03,121 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:09:03,121 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:10:46,298 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:10:46,299 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:10:46,299 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:10:46,342 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:10:46,342 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:10:46,342 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:10:46,343 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:10:46,343 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:10:46,343 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:10:46,343 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:10:47,491 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:10:47,491 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:10:47,491 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:10:47,491 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:12:00,221 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:12:00,222 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:12:00,223 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:12:00,263 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:12:00,264 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:12:00,264 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:12:00,264 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:12:00,264 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:12:00,264 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:12:00,264 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:12:00,739 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:12:00,739 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:12:00,739 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:12:00,740 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:15:24,551 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:15:24,552 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:15:24,553 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:15:24,594 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:15:24,594 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:15:24,594 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:15:24,594 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:15:24,595 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:15:24,595 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:15:24,595 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:15:26,649 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:15:26,649 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:15:26,651 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:15:26,652 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:16:18,413 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:16:18,414 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:16:18,414 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:16:18,446 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:16:18,446 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:16:18,446 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:16:18,447 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:16:18,447 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:16:18,447 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:16:18,447 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:16:20,683 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:16:20,684 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:16:20,685 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:16:20,685 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:20:16,129 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:20:16,130 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:20:16,131 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:20:16,173 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:20:16,173 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:20:16,173 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:20:16,173 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:20:16,174 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:20:16,174 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:20:16,174 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:20:16,563 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:20:16,563 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:20:16,563 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:20:16,563 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:21:07,915 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:21:07,915 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:21:07,916 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:21:07,956 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:21:07,956 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:21:07,956 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:21:07,956 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:21:07,957 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:21:07,957 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:21:07,957 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:21:08,449 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:21:08,450 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:21:08,450 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:21:08,450 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:24:01,249 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:24:01,250 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:24:01,251 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:24:01,289 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:24:01,290 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:24:01,290 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:24:01,290 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:24:01,290 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:24:01,290 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:24:01,290 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:24:01,832 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:24:01,833 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:24:01,833 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:24:01,833 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:27:33,967 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-09-19 12:30:53,237 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:30:53,237 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:30:53,239 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:30:53,273 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:30:53,273 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:30:53,273 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:30:53,273 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:30:53,274 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:30:53,274 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:30:53,274 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:30:53,443 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:30:53,443 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:30:53,444 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:30:53,444 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:31:36,741 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:31:36,757 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:44:02,417 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:44:02,431 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:44:05,200 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:44:05,201 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:44:05,202 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:44:05,253 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:44:05,253 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:44:05,253 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:44:05,253 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:44:05,254 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:44:05,254 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:44:05,254 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:44:07,339 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:44:07,339 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:44:07,340 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:44:07,340 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:46:21,473 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:46:21,474 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:46:21,474 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:46:21,520 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:46:21,520 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:46:21,520 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:46:21,520 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:46:21,521 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:46:21,521 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:46:21,521 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:46:23,329 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:46:23,329 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:46:23,330 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:46:23,330 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:51:38,400 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 12:51:38,400 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 12:51:38,401 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 12:51:38,443 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 12:51:38,443 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 12:51:38,443 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 12:51:38,443 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 12:51:38,443 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 12:51:38,443 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 12:51:38,443 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 12:51:41,376 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 12:51:41,376 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 12:51:41,376 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 12:51:41,377 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 12:58:47,108 INFO o.a.j.g.a.Load: Loading file: /Users/acquaint/Thread Group.jmx
+2025-09-19 12:58:47,109 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 12:58:47,109 INFO o.a.j.s.SaveService: Loading file: /Users/acquaint/Thread Group.jmx
+2025-09-19 12:58:47,153 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:58:47,159 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 12:58:47,189 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 13:00:30,036 INFO o.a.j.g.a.Load: Loading file: /Users/acquaint/View Results Tree.jmx
+2025-09-19 13:00:30,036 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 13:00:30,036 INFO o.a.j.s.SaveService: Loading file: /Users/acquaint/View Results Tree.jmx
+2025-09-19 13:00:30,053 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 13:00:30,061 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 13:00:30,084 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 13:00:48,388 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 13:00:48,389 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 13:00:48,389 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 13:00:48,432 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 13:00:48,433 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 13:00:48,433 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 13:00:48,433 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 13:00:48,433 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 13:00:48,433 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 13:00:48,433 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 13:01:00,162 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 13:01:00,162 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 13:01:00,163 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 13:01:00,163 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 13:01:01,896 WARN o.a.j.p.h.v.RequestViewHTTP: Error decoding query, maybe your request parameters should be encoded:{
+	"loginType":"LVP"
+	"emailAddress":"manishCH@40acquaintsoft.com"
+	"password":"mR1kCA5hz%$ma$Ja"
+}
+java.lang.IllegalArgumentException: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: "$m"
+	at java.base/java.net.URLDecoder.decode(URLDecoder.java:243) ~[?:?]
+	at java.base/java.net.URLDecoder.decode(URLDecoder.java:151) ~[?:?]
+	at org.apache.jmeter.protocol.http.visualizers.RequestViewHTTP.decodeQuery(RequestViewHTTP.java:341) ~[ApacheJMeter_http.jar:5.6.3]
+	at org.apache.jmeter.protocol.http.visualizers.RequestViewHTTP.getQueryMap(RequestViewHTTP.java:296) ~[ApacheJMeter_http.jar:5.6.3]
+	at org.apache.jmeter.protocol.http.visualizers.RequestViewHTTP.setSamplerResult(RequestViewHTTP.java:219) ~[ApacheJMeter_http.jar:5.6.3]
+	at org.apache.jmeter.visualizers.RequestPanel.setSamplerResult(RequestPanel.java:101) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.visualizers.SamplerResultTab.setupTabPane(SamplerResultTab.java:256) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.valueChanged(ViewResultsFullVisualizer.java:395) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.valueChanged(ViewResultsFullVisualizer.java:373) ~[ApacheJMeter_components.jar:5.6.3]
+	at java.desktop/javax.swing.JTree.fireValueChanged(JTree.java:3019) ~[?:?]
+	at java.desktop/javax.swing.JTree$TreeSelectionRedirector.valueChanged(JTree.java:3520) ~[?:?]
+	at java.desktop/javax.swing.tree.DefaultTreeSelectionModel.fireValueChanged(DefaultTreeSelectionModel.java:650) ~[?:?]
+	at java.desktop/javax.swing.tree.DefaultTreeSelectionModel.notifyPathChange(DefaultTreeSelectionModel.java:1120) ~[?:?]
+	at java.desktop/javax.swing.tree.DefaultTreeSelectionModel.setSelectionPaths(DefaultTreeSelectionModel.java:306) ~[?:?]
+	at java.desktop/javax.swing.tree.DefaultTreeSelectionModel.setSelectionPath(DefaultTreeSelectionModel.java:200) ~[?:?]
+	at java.desktop/javax.swing.JTree.setSelectionPath(JTree.java:1709) ~[?:?]
+	at java.desktop/javax.swing.plaf.basic.BasicTreeUI.selectPathForEvent(BasicTreeUI.java:2761) ~[?:?]
+	at java.desktop/javax.swing.plaf.basic.BasicTreeUI$Handler.handleSelection(BasicTreeUI.java:4096) ~[?:?]
+	at java.desktop/javax.swing.plaf.basic.BasicTreeUI$Handler.mousePressed(BasicTreeUI.java:4035) ~[?:?]
+	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:287) ~[?:?]
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6618) ~[?:?]
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3398) ~[?:?]
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386) ~[?:?]
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266) ~[?:?]
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996) ~[?:?]
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4572) ~[?:?]
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516) ~[?:?]
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98) ~[?:?]
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747) ~[?:?]
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) [?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2025-09-19 13:01:10,180 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 13:01:10,181 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 13:01:10,181 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 13:01:10,224 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 13:01:10,224 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 13:01:10,224 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 13:01:10,224 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 13:01:10,224 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 13:01:10,224 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 13:01:10,224 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 13:01:13,015 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 13:01:13,015 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 13:01:13,016 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 13:01:13,016 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 13:01:16,276 WARN o.a.j.p.h.v.RequestViewHTTP: Error decoding query, maybe your request parameters should be encoded:{
+	"loginType":"LVP"
+	"emailAddress":"manishCH@40acquaintsoft.com"
+	"password":"mR1kCA5hz%$ma$Ja"
+}
+java.lang.IllegalArgumentException: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: "$m"
+	at java.base/java.net.URLDecoder.decode(URLDecoder.java:243) ~[?:?]
+	at java.base/java.net.URLDecoder.decode(URLDecoder.java:151) ~[?:?]
+	at org.apache.jmeter.protocol.http.visualizers.RequestViewHTTP.decodeQuery(RequestViewHTTP.java:341) ~[ApacheJMeter_http.jar:5.6.3]
+	at org.apache.jmeter.protocol.http.visualizers.RequestViewHTTP.getQueryMap(RequestViewHTTP.java:296) ~[ApacheJMeter_http.jar:5.6.3]
+	at org.apache.jmeter.protocol.http.visualizers.RequestViewHTTP.setSamplerResult(RequestViewHTTP.java:219) ~[ApacheJMeter_http.jar:5.6.3]
+	at org.apache.jmeter.visualizers.RequestPanel.setSamplerResult(RequestPanel.java:101) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.visualizers.SamplerResultTab.setupTabPane(SamplerResultTab.java:256) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.valueChanged(ViewResultsFullVisualizer.java:395) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.valueChanged(ViewResultsFullVisualizer.java:373) ~[ApacheJMeter_components.jar:5.6.3]
+	at java.desktop/javax.swing.JTree.fireValueChanged(JTree.java:3019) ~[?:?]
+	at java.desktop/javax.swing.JTree$TreeSelectionRedirector.valueChanged(JTree.java:3520) ~[?:?]
+	at java.desktop/javax.swing.tree.DefaultTreeSelectionModel.fireValueChanged(DefaultTreeSelectionModel.java:650) ~[?:?]
+	at java.desktop/javax.swing.tree.DefaultTreeSelectionModel.notifyPathChange(DefaultTreeSelectionModel.java:1120) ~[?:?]
+	at java.desktop/javax.swing.tree.DefaultTreeSelectionModel.setSelectionPaths(DefaultTreeSelectionModel.java:306) ~[?:?]
+	at java.desktop/javax.swing.tree.DefaultTreeSelectionModel.setSelectionPath(DefaultTreeSelectionModel.java:200) ~[?:?]
+	at java.desktop/javax.swing.JTree.setSelectionPath(JTree.java:1709) ~[?:?]
+	at java.desktop/javax.swing.plaf.basic.BasicTreeUI.selectPathForEvent(BasicTreeUI.java:2761) ~[?:?]
+	at com.github.weisj.darklaf.ui.tree.DarkTreeUI.access$700(DarkTreeUI.java:55) ~[darklaf-core-2.7.3.jar:2.7.3]
+	at com.github.weisj.darklaf.ui.tree.DarkTreeUI$DarkTreeMouseListener.handle(DarkTreeUI.java:858) ~[darklaf-core-2.7.3.jar:2.7.3]
+	at com.github.weisj.darklaf.ui.tree.DarkTreeUI$DarkTreeMouseListener.mousePressed(DarkTreeUI.java:830) ~[darklaf-core-2.7.3.jar:2.7.3]
+	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:288) ~[?:?]
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6618) ~[?:?]
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3398) ~[?:?]
+	at java.desktop/java.awt.Component.processEvent(Component.java:6386) ~[?:?]
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266) ~[?:?]
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996) ~[?:?]
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324) ~[?:?]
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948) ~[?:?]
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4572) ~[?:?]
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516) ~[?:?]
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310) ~[?:?]
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780) ~[?:?]
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828) ~[?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) ~[?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98) ~[?:?]
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747) ~[?:?]
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745) ~[?:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) [?:?]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) [?:?]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2025-09-19 13:59:22,143 INFO o.a.j.g.a.Load: Loading file: /Users/acquaint/Thread Group.jmx
+2025-09-19 13:59:22,144 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 13:59:22,144 INFO o.a.j.s.SaveService: Loading file: /Users/acquaint/Thread Group.jmx
+2025-09-19 13:59:22,195 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 13:59:22,203 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 13:59:22,229 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 14:12:42,432 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 14:19:27,849 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 14:19:27,861 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 14:19:31,378 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:19:31,379 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:19:31,380 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:19:31,448 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:19:31,448 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:19:31,448 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:19:31,448 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:19:31,448 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:19:31,448 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:19:31,449 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:19:33,417 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:19:33,417 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:19:33,418 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:19:33,418 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:20:58,276 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:20:58,277 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:20:58,278 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:20:58,333 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:20:58,333 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:20:58,333 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:20:58,333 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:20:58,334 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:20:58,334 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:20:58,334 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:20:59,311 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:20:59,312 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:20:59,312 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:20:59,312 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:24:55,554 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:24:55,555 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:24:55,556 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:24:55,605 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:24:55,605 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:24:55,605 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:24:55,605 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:24:55,605 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:24:55,605 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:24:55,605 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:24:56,756 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:24:56,756 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:24:56,756 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:24:56,756 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:28:11,048 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:28:11,048 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:28:11,049 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:28:11,101 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:28:11,101 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:28:11,101 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:28:11,101 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:28:11,102 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:28:11,102 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:28:11,102 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:28:12,202 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:28:12,203 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:28:12,203 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:28:12,204 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:28:58,685 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:28:58,685 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:28:58,686 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:28:58,734 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:28:58,735 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:28:58,735 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:28:58,735 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:28:58,735 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:28:58,735 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:28:58,735 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:28:59,759 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:28:59,759 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:28:59,760 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:28:59,760 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:29:26,229 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:29:26,230 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:29:26,230 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:29:26,277 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:29:26,278 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:29:26,278 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:29:26,278 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:29:26,278 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:29:26,278 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:29:26,278 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:29:27,230 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:29:27,230 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:29:27,230 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:29:27,230 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:30:55,150 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:30:55,150 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:30:55,151 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:30:55,201 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:30:55,201 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:30:55,201 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:30:55,201 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:30:55,201 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:30:55,201 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:30:55,201 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:30:56,240 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:30:56,240 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:30:56,240 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:30:56,240 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:31:12,261 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:31:12,261 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:31:12,262 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:31:12,311 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:31:12,311 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:31:12,311 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:31:12,311 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:31:12,312 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:31:12,312 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:31:12,312 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:31:13,374 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:31:13,374 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:31:13,375 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:31:13,375 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:31:37,317 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:31:37,317 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:31:37,317 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:31:37,367 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:31:37,367 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:31:37,367 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:31:37,367 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:31:37,367 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:31:37,367 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:31:37,368 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:31:38,380 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:31:38,381 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:31:38,381 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:31:38,381 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:34:48,607 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:34:48,608 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:34:48,608 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:34:48,657 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:34:48,658 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:34:48,658 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:34:48,658 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:34:48,658 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:34:48,658 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:34:48,658 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:34:49,603 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:34:49,603 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:34:49,604 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:34:49,604 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:36:27,989 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:36:27,989 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:36:27,990 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:36:28,039 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:36:28,039 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:36:28,039 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:36:28,039 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:36:28,039 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:36:28,039 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:36:28,039 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:36:29,007 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:36:29,007 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:36:29,007 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:36:29,007 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:44:41,728 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:44:41,729 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:44:41,729 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:44:41,777 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:44:41,778 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:44:41,778 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:44:41,778 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:44:41,778 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:44:41,778 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:44:41,778 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:44:42,874 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:44:42,874 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:44:42,874 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:44:42,875 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:46:13,869 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:46:13,869 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:46:13,870 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:46:13,920 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:46:13,920 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:46:13,920 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:46:13,920 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:46:13,921 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:46:13,921 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:46:13,921 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:46:14,881 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:46:14,881 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:46:14,882 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:46:14,882 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:50:20,515 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:50:20,516 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:50:20,520 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:50:20,576 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:50:20,577 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:50:20,577 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:50:20,577 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:50:20,577 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:50:20,577 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:50:20,577 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:50:21,867 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, JSR223 PostProcessor
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.apache.jmeter.protocol.http.control.CookieManager.getCookie() is applicable for argument types: (String) values: [XSRF-TOKEN]
+Possible solutions: getCookies()
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.CompiledScript.eval(CompiledScript.java:93) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:230) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.apache.jmeter.protocol.http.control.CookieManager.getCookie() is applicable for argument types: (String) values: [XSRF-TOKEN]
+Possible solutions: getCookies()
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:70) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:46) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139) ~[groovy-3.0.20.jar:3.0.20]
+	at Script1.run(Script1.groovy:2) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 9 more
+2025-09-19 14:50:21,881 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:50:21,881 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:50:21,882 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:50:21,883 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 14:51:21,337 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 14:51:21,338 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 14:51:21,338 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 14:51:21,395 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 14:51:21,396 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 14:51:21,396 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 14:51:21,396 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 14:51:21,396 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 14:51:21,396 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 14:51:21,396 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 14:51:22,357 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, JSR223 PostProcessor
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.apache.jmeter.protocol.http.control.CookieManager.getCookie() is applicable for argument types: (String) values: [XSRF-TOKEN]
+Possible solutions: getCookies()
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.CompiledScript.eval(CompiledScript.java:93) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:230) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.apache.jmeter.protocol.http.control.CookieManager.getCookie() is applicable for argument types: (String) values: [XSRF-TOKEN]
+Possible solutions: getCookies()
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:70) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:46) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139) ~[groovy-3.0.20.jar:3.0.20]
+	at Script2.run(Script2.groovy:2) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 9 more
+2025-09-19 14:51:22,378 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 14:51:22,378 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 14:51:22,378 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 14:51:22,378 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 15:01:17,746 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 15:01:17,747 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 15:01:17,748 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 15:01:17,805 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 15:01:17,805 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 15:01:17,805 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 15:01:17,805 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 15:01:17,806 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 15:01:17,806 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 15:01:17,806 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 15:01:18,843 ERROR o.a.j.e.JSR223PostProcessor: Problem in JSR223 script, JSR223 PostProcessor
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.apache.jmeter.protocol.http.control.CookieManager.getCookie() is applicable for argument types: (String) values: [XSRF-TOKEN]
+Possible solutions: getCookies()
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.CompiledScript.eval(CompiledScript.java:93) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:230) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.apache.jmeter.protocol.http.control.CookieManager.getCookie() is applicable for argument types: (String) values: [XSRF-TOKEN]
+Possible solutions: getCookies()
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:70) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:46) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125) ~[groovy-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139) ~[groovy-3.0.20.jar:3.0.20]
+	at Script3.run(Script3.groovy:2) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 9 more
+2025-09-19 15:01:18,865 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 15:01:18,865 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 15:01:18,865 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 15:01:18,865 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 15:09:01,747 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 15:09:01,748 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 15:09:01,748 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 15:09:01,803 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 15:09:01,803 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 15:09:01,803 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 15:09:01,803 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 15:09:01,804 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 15:09:01,804 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 15:09:01,804 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 15:09:03,087 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 15:09:03,087 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 15:09:03,087 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 15:09:03,088 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 15:09:42,486 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 15:09:42,486 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 15:09:42,487 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 15:09:42,544 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 15:09:42,544 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 15:09:42,544 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 15:09:42,544 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 15:09:42,545 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 15:09:42,545 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 15:09:42,545 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 15:09:43,435 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 15:09:43,436 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 15:09:43,436 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 15:09:43,436 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 15:13:53,882 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 15:13:53,882 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 15:13:53,883 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 15:13:53,936 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 15:13:53,936 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 15:13:53,936 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 15:13:53,937 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 15:13:53,937 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 15:13:53,937 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 15:13:53,937 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 15:13:55,773 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 15:13:55,773 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 15:13:55,774 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 15:13:55,774 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 15:16:14,445 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 15:16:14,445 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 15:16:14,446 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 15:16:14,501 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 15:16:14,501 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 15:16:14,501 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 15:16:14,501 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 15:16:14,501 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 15:16:14,501 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 15:16:14,501 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 15:16:18,637 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 15:16:18,637 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 15:16:18,638 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 15:16:18,638 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 15:18:00,912 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-09-19 15:18:00,913 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-09-19 15:18:00,913 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-09-19 15:18:00,970 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-09-19 15:18:00,970 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-09-19 15:18:00,970 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-09-19 15:18:00,970 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-09-19 15:18:00,971 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-09-19 15:18:00,971 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-09-19 15:18:00,971 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-09-19 15:18:05,222 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-09-19 15:18:05,222 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-09-19 15:18:05,222 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-19 15:18:05,223 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-09-19 15:35:01,595 INFO o.a.j.g.a.Load: Loading file: /Users/acquaint/Regular Expression Extractor.jmx
+2025-09-19 15:35:01,596 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
+2025-09-19 15:35:01,596 INFO o.a.j.s.SaveService: Loading file: /Users/acquaint/Regular Expression Extractor.jmx
+2025-09-19 15:35:01,619 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.ResultRenderer], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 15:35:01,628 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.visualizers.RequestView], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-09-19 15:35:01,646 INFO o.a.j.s.FileServer: Set new base='/Users/acquaint'
