@@ -6,7 +6,7 @@ class ProductDetailPageElements {
         this.driver=driver;
     }
     async addProductWithQuantity(){
-        let quantity = 5;
+        let quantity = 1;
         const inputQuantity = await this.driver.findElement(By.css('input[type="number"]')).getAttribute('value');
         console.log('Product quantity is:',inputQuantity);
         if(inputQuantity<quantity){
@@ -21,7 +21,10 @@ class ProductDetailPageElements {
             }
     }
     async clickOnAddToCartButton(){
-        const addToCartBtn = await this.driver.findElement(By.css("button[type='button')], contains(text(),'Add to Cart')]"));
+        const addToCartBtn = await this.driver.wait(until.elementLocated(By.xpath("//button[i[contains(@class,'las la-shopping-bag')] and contains(normalize-space(),'Thêm vào giỏ hàng')]")),2000);
+        const actions =this.driver.actions({async:true});
+        await actions.move({origin:addToCartBtn}).perform();
+        //await this.driver.sleep(1000);
         await addToCartBtn.click();
 }
 }

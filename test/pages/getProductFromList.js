@@ -35,9 +35,6 @@ class GetProductFromListPage {
                 const actions =this.driver.actions({async:true});
                 await actions.move({origin:nextButton}).perform();
                 await this.driver.sleep(1000);
-                //await this.driver.wait(until.elementIsVisible(nextButton), 5000);
-                //await this.driver.wait(until.elementIsEnabled(nextButton), 5000);
-                //
                 await nextButton.click();
                // await this.driver.executeScript("arguments[0].click();", nextButton);
                 await this.driver.sleep(2000);
