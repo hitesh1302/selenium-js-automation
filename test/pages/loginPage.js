@@ -28,6 +28,10 @@ class LoginPage {
 
   async changeToEmail(){
     const emailTab = await this.driver.wait(until.elementLocated(By.css('button[type="button"]')), 20000);
+    const actions = this.driver.actions({async:true});
+    await this.driver.executeScript("arguments[0].scrollIntoView(true);", emailTab);
+    await actions.move({origin:emailTab}).perform();
+    await this.driver.sleep(1000);
     await emailTab.click();
   }
 
