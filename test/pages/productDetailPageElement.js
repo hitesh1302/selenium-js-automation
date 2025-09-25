@@ -6,11 +6,11 @@ class ProductDetailPageElements {
         this.driver=driver;
     }
     async addProductWithQuantity(){
-        let quantity = 1;
+        //let quantity = 1;
         const inputQuantity = await this.driver.findElement(By.css('input[type="number"]')).getAttribute('value');
         console.log('Product quantity is:',inputQuantity);
-        if(inputQuantity<quantity){
-            for (let i=0;i<quantity-1;i++){
+        if(inputQuantity<process.env.QUANTITY){
+            for (let i=0;i<process.env.QUANTITY-1;i++){
                 const increaseBtn = await this.driver.findElement(By.css("button[data-type='plus']"));
                 const actions =this.driver.actions({async:true});
                 await actions.move({origin:increaseBtn}).perform();
