@@ -26,14 +26,32 @@ class LoginPage {
     await mobileNumberInput.sendKeys(mobileNumber);
   }
 
-  async changeToEmail(){
-    const emailTab = await this.driver.wait(until.elementLocated(By.css('button[type="button"]')), 20000);
-    const actions = this.driver.actions({async:true});
-    await this.driver.executeScript("arguments[0].scrollIntoView(true);", emailTab);
-    await actions.move({origin:emailTab}).perform();
-    await this.driver.sleep(1000);
-    await emailTab.click();
-  }
+    async changeToEmail(){
+      let loginModal =null;
+      try{
+        loginModal = await this.driver.wait(until.elementLocated(By.xpath("//div[contains(@class,'modal-content')]")),2000);
+      }
+      catch (error){
+         console.log('No login modal detected in try catch');
+      }
+         if (loginModal){
+          console.log('Login modal detected');
+          await this.driver.sleep(1000);
+          const emailTab = await this.driver.wait(until.elementLocated(By.css("button.btn.btn-link.text-primary")),5000);
+          await this.driver.wait(until.elementIsVisible(emailTab), 5000);
+          await this.driver.sleep(1000);
+          await emailTab.click();
+      }
+      else{
+          console.log('No login modal detected for email field');
+          await this.driver.sleep(1000);
+          const emailTab = await this.driver.wait(until.elementLocated(By.css('button[type="button"]')), 20000);
+          const actions = this.driver.actions({async:true});
+          await actions.move({origin:emailTab}).perform();
+          await this.driver.sleep(1000);
+          await emailTab.click();
+      }
+    }
 
   async enterUsername(username) {
     const usernameInput = await this.driver.findElement(By.id('email'));
@@ -42,14 +60,54 @@ class LoginPage {
   }
 
   async enterPassword(password) {
-    const passwordInput = await this.driver.findElement(By.id('password'));
-    await passwordInput.clear();
-    await passwordInput.sendKeys(password);
+    let loginModal =null;
+      try{
+        loginModal = await this.driver.wait(until.elementLocated(By.xpath("//div[contains(@class,'modal-content')]")),2000);
+      }
+      catch (error){
+         console.log('No login modal detected in try catch');
+      }
+    if (loginModal){
+        console.log('Login modal detected for password field');
+        await this.driver.sleep(1000);
+        const passwordInput = await this.driver.wait(until.elementLocated(By.css('input[type="password"]')),5000);
+        await passwordInput.sendKeys(password);
+    }
+    else{
+        console.log('No login modal detected');
+        await this.driver.sleep(1000);
+        const passwordInput = await this.driver.findElement(By.id('password'));
+         await passwordInput.clear();
+         await passwordInput.sendKeys(password);
+    }
   }
 
   async clickLogin() {
-    const loginBtn = await this.driver.wait(until.elementLocated(By.css('button[type="submit"]')), 20000);
-    await loginBtn.click();
+    let loginModal=null;
+      try{
+        loginModal = await this.driver.wait(until.elementLocated(By.xpath("//div[contains(@class,'modal-content')]")),2000);
+      }
+      catch (error){
+         console.log('No login modal detected in try catch');
+      }
+    if (loginModal){
+        console.log('Login modal detected for submit button');
+        await this.driver.sleep(1000); 
+        const loginBtn = await loginModal.findElement(By.xpath('//div[contains(@class,"mb-5")]//button[@type="submit"]'));
+        const actions = this.driver.actions({async:true});
+        await actions.move({origin:loginBtn}).perform();
+        await this.driver.sleep(1000);
+        await loginBtn.click();
+    }
+    else{
+        console.log('No login modal detected for submit button');
+        await this.driver.sleep(1000);
+        const loginBtn = await this.driver.wait(until.elementLocated(By.css('button[type="submit"]')), 20000);
+        const actions = this.driver.actions({async:true});
+        await actions.move({origin:loginBtn}).perform();
+        await this.driver.sleep(1000);
+        await loginBtn.click();
+    }
   }
 
   async getErrorMessage() {
@@ -58,15 +116,12 @@ class LoginPage {
         until.elementLocated(By.css('span[data-notify="message"]')),
         5000
     );
-
     // Wait until the element contains non-empty text
     await this.driver.wait(
         until.elementTextMatches(errorElement, /.+/),
         5000,
         'Error message did not appear'
     );
-
-    // Return the trimmed text
     return (await errorElement.getText()).trim();
     }
 

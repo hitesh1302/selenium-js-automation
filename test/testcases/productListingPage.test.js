@@ -19,10 +19,10 @@ describe ('Get product from product listing page test cases', function (){
         loginPage = new LoginPage(driver);
         await getProductFromListPage.open();
     });
-   /*afterEach(async function(){
+   afterEach(async function(){
         this.timeout(10000);
         await quitDriver(driver);
-    });*/
+    });
     
     it('Get product from product listing page', async function(){
         this.timeout(100000);

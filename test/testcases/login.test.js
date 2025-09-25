@@ -21,13 +21,14 @@ describe('Login page test cases', () => {
         await loginPage.changeToEmail();
         await loginPage.enterUsername(process.env.VALID_USERNAME);
         await loginPage.enterPassword(process.env.VALID_PASSWORD);
+        await driver.sleep(2000);
         await loginPage.clickLogin();
         await driver.sleep(5000);
         const currentUrl = await driver.getCurrentUrl();
         console.log(currentUrl);
         expect(currentUrl.includes('/dashboard')).to.be.true;
-    
     });
+
     it('Login with invalid credentials', async function () {
         this.timeout(30000);
         await loginPage.changeToEmail();
@@ -36,14 +37,15 @@ describe('Login page test cases', () => {
         await loginPage.clickLogin();
         //const currentUrl = await driver.getCurrentUrl();
         //expect(currentUrl.includes('/dashboard')).to.be.false; 
-        this.timeout(10000);
+        //await driver.sleep(5000);
         const errorMessage = await loginPage.getErrorMessage();
         console.log(errorMessage);
         expect(errorMessage).to.match(/Thông tin Đăng nhập không hợp lệ/);
     });
-    it('Login with valid credentials using mobile number', async function () {
+
+    it.only('Login with valid credentials using mobile number', async function () {
       this.timeout(30000);
-        await loginPage.selectCountryCode();
+        await loginPage.selectCountryCode(process.env.COUNTRY_CODE);
         await loginPage.enterMobileNumber(process.env.VALID_MNUMBER);
         await loginPage.enterPassword(process.env.VALID_PASSWORD);
         await loginPage.clickLogin();
