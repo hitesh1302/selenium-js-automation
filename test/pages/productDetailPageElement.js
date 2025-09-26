@@ -17,7 +17,6 @@ class ProductDetailPageElements {
                 await this.driver.sleep(1000);
                 await increaseBtn.click();
             }
-
             }
     }
     async clickOnAddToCartButton(){
