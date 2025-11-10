@@ -22,6 +22,7 @@ describe ('Add product to cart test cases', function (){
         await driver.sleep(5000);
         const currentUrl = await driver.getCurrentUrl();
         expect(currentUrl.includes('/dashboard')).to.be.true;
+        await this.driver.scr
 
     });
    afterEach(async function(){
